@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="dashboard1.css">
+
+	<title>AdminHub</title>
+</head>
+<body>
+
+
+    
+        <nav id="sidebar">
+            <a href="#" class="brand">
+                <i class='bx bxs-smile'></i>
+                <span class="text1">Automation Hub</span>
+            </a>
+        
+            <!-- Navigation links -->
+            <ul class="side-menu">
+                <li>
+                    <a href="Home.html">
+                        <i class='bx bxs-shopping-bag-alt'></i>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="dashboard1.html">
+                        <i class='bx bxs-dashboard'></i>
+                        <span class="text">Dashboard</span>                 
+                    </a>
+                </li>
+                <li>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfx7qBYHpS8vSe3YL7ZJsKefPUTzf1spZSUNUr6ymS2QtgRyg/viewform">
+                        <i class='bx bxs-shopping-bag-alt'></i>
+                        <span class="text">New Idea Submission Form</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="wall-of-fame.html">
+                        <i class='bx bxs-doughnut-chart'></i>
+                        <span class="text">Wall of Fame</span>
+                    </a>
+                </li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </nav>
+
+        <div class="image">
+            <img src="lo.jpg" alt="Image Description"width="5000" height="450">
+            <!-- <video autoplay muted loop id="background-video">
+                <source src="video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
+            <div class="dashboard-text">Dashboard</div>
+        </div>
+
+        <style>
+            /* Style the iframe container */
+            .iframe-container {
+                position: relative;
+                overflow: hidden;
+                padding-top: 56.25%; /* 16:9 aspect ratio for responsive scaling */
+                border: 15px solid #ccc; /* Add a border around the iframe */
+            }
+    
+            /* Style the iframe */
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 2px solid black; /* Remove iframe border */
+            }
+             /* Style the dashboard heading */
+                    
+            .dashboard-text {
+                 position: absolute;
+                 top: 30%;
+                 left: 50%;
+                 transform: translate(-50%, -50%);
+                 color: white;
+                 font-size: 150px;
+                 font-weight: bold;
+             }
+        </style>        
+        
+          <!-- Replace 'YOUR_PUBLISHED_LINK' with the correct link you copied after publishing to the web -->
+          <div class="iframe-container">
+          <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRkIj7MdhoWpvAd89cBRosQS-f8cGiAwlK27AUpZhoc3x1m-J3gOPx0KxexLHSZng/pubhtml?gid=780824735&amp;single=true" allowfullscreen></iframe>
+          </div>
+
+
+        <!-- <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRkIj7MdhoWpvAd89cBRosQS-f8cGiAwlK27AUpZhoc3x1m-J3gOPx0KxexLHSZng/pubhtml" width="100%" height="500"></iframe> -->
+        

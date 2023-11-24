@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+:root {
+	--poppins: 'Poppins', sans-serif;
+	--lato: 'Lato', sans-serif;
+
+	--light: #F9F9F9;
+	--blue: #3C91E6;
+	--light-blue: #CFE8FF;
+	--grey: #eee;
+	--dark-grey: #AAAAAA;
+	--dark: #342E37;
+	--red: #DB504A;
+	--yellow: #FFCE26;
+	--light-yellow: #FFF2C6;
+	--orange: #FD7238;
+	--light-orange: #FFE0D3;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+body.dark {
+	--light: #0C0C1E;
+	--grey: #060714;
+	--dark: #FBFBFB;
+}
+
+body {
+	background: var(--grey);
+	overflow-x: hidden;
+}
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    top: 0; /* Place it at the top */
+    right: 0; 
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  #sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:lightgrey;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+	font-size: 14px;
+    z-index: 100; /* Ensures it stays above other content */
+}
+.text {
+   color : black;
+   font-weight: bold;
+   font-size: 20px;
+}
+.bx.bxs-smile {
+    color: #2a2565;
+    font-size: 30px; /* Set the desired color */
+}
+.bxs-shopping-bag-alt {
+    color: #2a2565;
+    font-size: 15px; /* Set the desired color */
+}
+.bxs-dashboard {
+    color: #2a2565;
+    font-size: 15px; /* Set the desired color */
+}
+.bxs-doughnut-chart {
+    color: #2a2565;
+    font-size: 15px; /* Set the desired color */
+}
+
+img {
+    display: block;
+    margin: 20px auto; /* Adjust this value for vertical alignment */
+}
+@keyframes blink {
+    0%, 100% {
+        box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
+    }
+    50% {
+        box-shadow: none;
+    }
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray; /* Set your desired background color */
+    color: black; /* Set the text color for all elements */
+}
+
+.background-with-logo {
+    /* Set your background image path */
+    /* background-image: url('video.mp4') no-repeat; */
+
+    /* Set your desired background properties */
+    background-size: cover; /* Adjust to your needs */
+    background-position: center; /* Adjust to your needs */
+    /* background-repeat: no-repeat; Adjust to your needs */
+    /* background-color: rgb(42, 153, 165); Set your desired background color */
+    padding: 0;
+    text-align: left;
+    width: 100vw; /* Use 100vw for 100% of the viewport width */
+    height: 400px;
+	display: flex; /* Make the logo and quote display in a row */
+    align-items: center;
+     /* Set a specific height if needed */
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    z-index: -1; /* Place the video behind other content */
+}
+
+.blinking-text {
+    animation: blinkText 5s alternate infinite;
+}
+
+.blinking-logo {
+    animation: blinkLogo 5s alternate infinite;
+}
+
+@keyframes blinkText {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes blinkLogo {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* CSS for the logo to position it on top of the background */
+.blinking-logo {
+    display: block;
+    margin: 70px 10px 10px; /* Adjust margin as needed */
+    padding: 60px; /* Adjust padding as needed */
+    animation: blink 2s linear infinite; /* Add a blinking animation */
+}
+
+/* CSS for the quote */
+.blinking-quote {
+    margin-left: 50px; /* Add some space between the logo and the quote */
+    font-size: 55px;
+    font-style: inherit;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation: blink 2s linear infinite; 
+    color: rgb(12, 12, 12);/* Add the same blinking animation as the logo */
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.centered-text2 {
+    text-align: right;
+    margin: 50px ;
+    max-width: 1500px; /* Adjust to your desired maximum width */
+    padding: 20px;
+}
+
+
+.yellow-heading1 {
+    color: var(--orange);
+    font-size: 65px; /* Adjust to your desired font size */
+}
+
+.black-heading1 {
+    color: black;
+    font-size: 40px;
+    font-weight: bold;  /* Adjust to your desired font size */
+}
+
+.white-heading1 {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;  /* Adjust to your desired font size */
+}
+.right-image1 {
+    float: left;
+    margin-left: 70px; 
+    margin-top: -350px;/* Adjust the margin as needed for spacing */
+    max-width: 400px; /* Adjust the maximum width as needed */
+    height: 400px;
+}
+
+.centered-text1 {
+    text-align: left;
+    margin: 50px ;
+    max-width: 1500px; /* Adjust to your desired maximum width */
+    padding: 20px;
+    font-weight: bold; 
+}
+
+.yellow-heading {
+    color: #2a2565;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.black-heading {
+    color: black;
+    font-size: 30px; 
+    font-weight: bold; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.right-image {
+    float: right;
+    margin-left: 70px; 
+    margin-top: -360px;/* Adjust the margin as needed for spacing */
+    max-width: 600px; /* Adjust the maximum width as needed */
+    height: 400px;
+}
+
+.yellow-heading5 {
+    color: #2a2565;
+    font-size: 75px;
+    font-weight: bold; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.yellow-heading6 {
+    color: #22653b;
+    font-size: 55px;
+    font-weight: bold; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.yellow-heading7 {
+    text-align: left;
+    margin: -80px ;
+    max-width: 500px;
+    margin-left:-20px; 
+    padding: 20px;   
+    color: #2a2565;
+    font-size: 42px;
+    font-weight: bold;  
+}
+.yellow-heading8 {
+    text-align: left;
+    margin: -70px ;
+    max-width: 500px; 
+    margin-left:-15px;/* Adjust to your desired maximum width */
+    padding: 20px;   
+    color: black;
+    font-size: 20px; 
+    font-weight: bold; /* Adjust to your desired font size */
+}
+.yellow-heading9 {
+    text-align: right;
+    margin: 80px ;
+    margin-top: -220px;
+    margin-right:-30px; 
+    max-width: -3000px; /* Adjust to your desired maximum width */
+    padding: 20px;   
+    color: #2a2565;
+    font-size: 43px;
+    font-weight: bold;  /* Adjust to your desired font size */
+}
+.yellow-heading10 {
+    text-align: left;
+    margin: -50px;
+    margin-top: -198px;
+    /* margin-right: -220px; Adjust to your desired right margin */
+    margin-left: 550px;   
+    /* max-width: -3000px; Adjust to your desired maximum width */
+    padding: 20px;   
+    color: black;
+    font-size: 20px;
+    font-weight: bold;  /* Adjust to your desired font size */
+}
+
+/* .yellow-heading11{
+    text-align: left;
+    margin: 0;            
+    max-width: 500px;     
+    margin-left: -660px;       
+    padding: 20px;
+    color: green;
+    font-size: 45px;
+} */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.yellow-heading11 {
+    text-align: left;
+    float: left;          /* Float left to position on the left */
+    margin: 0;            
+    max-width: 500px;  
+    margin-left: -15px;   
+    padding: 20px;
+    color: #2a2565;
+    font-size: 43px;
+    font-weight: bold; 
+}
+
+.yellow-heading12 {
+    text-align: left;     /* Align text to the right */
+    float: right;         /* Float right to position on the right */
+    margin: 0;
+    max-width: 500px;
+    margin-left: 100px;
+    margin-right: -35px;
+    padding: 20px;
+    color: #2a2565;
+    font-size: 43px;
+    font-weight: bold; 
+}
+.clearfix1::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.yellow-heading13 {
+    text-align: left;
+    float: left;          /* Float left to position on the left */
+    margin: 0;            
+    max-width: 500px;  
+    margin-left: -15px;
+    margin-top: -25px;   
+    padding: 20px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold; 
+}
+
+.yellow-heading14 {
+    text-align: left;     /* Align text to the right */
+    float: right;         /* Float right to position on the right */
+    margin: 0;
+    max-width: 500px;
+    /* /* margin-left: 100px; */
+    margin-right: -45px; 
+    margin-top: -25px;
+    padding: 20px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold; 
+}
+.clearfix2::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.yellow-heading15 {
+    text-align: left;
+    float: left;          /* Float left to position on the left */
+    margin: 0;            
+    max-width: 500px;  
+    margin-left: -15px;
+    margin-top: -25px;   
+    padding: 20px;
+    color: #2a2565;
+    font-size: 45px;
+    font-weight: bold; 
+}
+
+.yellow-heading16 {
+    text-align: left;     /* Align text to the right */
+    float: right;         /* Float right to position on the right */
+    margin: 0;
+    max-width: 500px;
+    /* /* margin-left: 100px; */
+    margin-right: 2px; 
+    margin-top: -25px;
+    padding: 20px;
+    color: #2a2565;
+    font-size: 45px;
+    font-weight: bold; 
+}
+.clearfix3::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.yellow-heading17 {
+    text-align: left;
+    float: left;          /* Float left to position on the left */
+    margin: 0;            
+    max-width: 500px;  
+    margin-left: -15px;
+    margin-top: -25px;   
+    padding: 20px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold; 
+}
+
+.yellow-heading18 {
+    text-align: left;     /* Align text to the right */
+    float: right;         /* Float right to position on the right */
+    margin: 0;
+    max-width: 500px;
+    /* /* margin-left: 100px; */
+    margin-right: -45px; 
+    margin-top: -25px;
+    padding: 20px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold; 
+}
+.yellow-heading19 {          
+    margin: 0;
+    max-width: 500px;
+    padding: 20px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.yellow-heading20 {          
+    margin: 0;
+    max-width: 500px;
+    padding: 20px;
+    color: black;
+    font-size: 14px;
+    font-weight: bold; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.yellow-heading21 {          
+    margin: 0;
+    max-width: 500px;
+    padding: 20px;
+    color: #2a2565;
+    font-size: 30px;
+    font-weight: bold; 
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.image-container {
+    position: relative;
+}
+
+.yellow-heading22 {
+    position: absolute;
+    top: 50%;            
+    left: 50%;           
+    transform: translate(-50%, -50%); /* Center the text */
+    margin: 0;
+    color: black;
+    font-size: 130px;
+    font-weight: bold; 
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+
+/* .right-image2 {
+    max-width: 1500px; 
+    height: 400px;
+} */
+
+.right-image2 {
+    max-width: 80%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain the aspect ratio while resizing */
+    border: 00px solid black; /* Add a border to the image */
+    border-radius: 5px; /* Add rounded corners to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+/* Additional styling for demonstration purposes */
+.image-container:hover .right-image2 {
+    transform: scale(1.1); /* Add a scale effect on hover */
+    transition: transform 0.3s ease-out; /* Smooth transition effect */
+}
+/* .yellow-heading22 {          
+    margin: 0;
+    /* max-width: 500px; */
+    /* margin-top: -450px; */
+    /* padding: 20px; */
+    /* color: var(--orange); */
+    /* font-size: 80px; */ */
+/* } */
+/* .right-image2 {
+    max-width: 1500px; /* Adjust the maximum width as needed */
+    /* height: 400px; */
+/* } */ */
+/* CSS for the background color that spans the entire width */
+/* .background-with-logo {
+    background-color: brown; 
+    text-align: left;
+    width: 100vw; 
+    height: 270px;
+} */
+
+/* CSS for the logo to position it on top of the background */
+/* .background-with-logo img {
+    display: block;
+    margin: 10px; 
+    padding: 60px;
+} */
+
+
+.pink-box {
+    background-color: pink;
+    padding: 10px; /* Adjust padding as needed for spacing */
+    border-radius: 5px; /* Add rounded corners for a box effect */
+}
+
+.green-box {
+    background-color: cornsilk;
+    padding: 30px; /* Adjust padding as needed for spacing */
+    border-radius: 5px;
+	font-size: 24px;
+    font-weight: bold;  /* Add rounded corners for a box effect */
+}
+.blinking-text5 {
+    color:black;
+    font-size: 30px;
+    font-weight: bold; 
+}
+.blinking-text5 {
+    animation: blinkText 1s alternate infinite;
+}
+
+@keyframes blinkText5 {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+.colour {
+    color: black; 
+	font-size: 34px;
+    font-weight: bold;  /* Add rounded corners for a box effect */
+}
+
+/* Style for the full-width line */
+.full-width-line {
+    border: none;
+    height: 4px; /* Adjust the line thickness as needed */
+    background-color:white; /* Adjust the line color as needed */
+    margin: 0;
+}
+
+.image-container2 {
+    position: relative;
+}
+
+.right-image {
+    max-width: 450px; /* Adjust the maximum width as needed */
+    height: 400px; /* Maintain the aspect ratio while resizing */
+    border: 00px solid black; /* Add a border to the image */
+    border-radius: 5px; /* Add rounded corners to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+/* Additional styling for demonstration purposes */
+.image-container2:hover .right-image {
+    transform: scale(1.1); /* Add a scale effect on hover */
+    transition: transform 0.3s ease-out; /* Smooth transition effect */
+}
+.image-container1 {
+    position: relative;
+}
+
+.right-image3 {
+    max-width: 80%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain the aspect ratio while resizing */
+    border: 00px solid black; /* Add a border to the image */
+    border-radius: 5px; /* Add rounded corners to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+/* Additional styling for demonstration purposes */
+.image-container1:hover .right-image3 {
+    transform: scale(1.1); /* Add a scale effect on hover */
+    transition: transform 0.3s ease-out; /* Smooth transition effect */
+}
+
+/* Style for the full-width dotted line */
+/* .full-width-dotted-line {
+    border: none;
+    border-top: 2px dotted #000; /* Adjust the line color as needed */
+    /* margin: 0; */
+/* } */ */
+
+
+/* Style the brand (Analytics Hub) link */
+.brand {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+	padding: 0;
+    margin: 0; /* Remove any margin to keep the link at the top left corner */
+}
+
+
+/* Style the brand (Analytics Hub) link */
+.brand {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+	padding: 0;
+    margin: 0; /* Remove any margin to keep the link at the top left corner */
+}
+
+
+
+/* Style the navigation links */
+.side-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    /* Add other styles for the navigation links as needed */
+}
+.side-menu li {
+    display: inline; /* Display list items inline */
+    margin-right: 20px; /* Adjust the spacing between links */
+}
+.side-menu li {
+	display: inline;
+    margin-right: 30px;
+    /* Add other list item styles as needed */
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: #fff;
+    /* Add other link styles as needed */
+}
+
+
+ 
+.content {
+    text-align: center;
+    margin: 0 auto; /* Center horizontally */
+    max-width: 1000px; /* Adjust the maximum width as needed */
+}
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="wall-of-fame.css">
+
+	<title>AdminHub</title>
+</head>
+<body>
+
+
+	<!-- <section id="sidebar">
+        <a href="#" class="brand">
+            <i class='bx bxs-smile'></i>
+            <span class="text">Analytics Hub</span>
+        </a>
+    </section> -->
+
+
+    <nav id="sidebar">
+        <a href="#" class="brand">
+            <i class='bx bxs-smile'></i>
+            <span class="text" style="font-size: 30px;">Automation Hub</span>
+        </a>
+    
+        <ul class="side-menu">
+            <li>
+                <a href="Home.html">
+                    <i class='bx bxs-shopping-bag-alt'></i>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="dashboard1.html">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="text">Dashboard</span>                 
+                </a>
+            </li>
+            <li>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfx7qBYHpS8vSe3YL7ZJsKefPUTzf1spZSUNUr6ymS2QtgRyg/viewform">
+                    <i class='bx bxs-shopping-bag-alt'></i>
+                    <span class="text">New Idea Submission Form</span>
+                </a>
+            </li>
+            <li>
+                <a href="wall-of-fame.html">
+                    <i class='bx bxs-doughnut-chart'></i>
+                    <span class="text">Wall of Fame</span>
+                </a>
+            </li>
+            <!-- Add more navigation links as needed -->
+        </ul>
+    </nav>
+
+    <div class="content">
+        <br><br>
+        <div class="apink-box">
+            <h3>WALL OF FAME</h3>
+        </div><br><br><br>     
+    </div>
+
+
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+    <style>
+        .image-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: -20px;
+        }
+
+        .image {
+            max-width: 30%; /* Adjust the width of the images as needed */
+        }
+
+        .image-description {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+         <h1>Image Gallery</h1>
+    </div>
+    <!-- First Row of Images -->
+    <div class="image-container">
+        <div class="image">
+            <img src="data:image/jpeg;base64,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" alt="Image 1">
+        </div>
+        <div class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVGa5rCSEw91b7Tq07Ju8cNBjCFas5zwSOGg&usqp=CAU" alt="Image 2">
+        </div>
+        <div class="image">
+            <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimg.freepik.com%2Ffree-photo%2Fclose-up-smiling-person-conference-room_23-2149085987.jpg%3Fsize%3D626%26ext%3Djpg%26ga%3DGA1.1.1413502914.1696896000%26semt%3Dais&tbnid=c3SJGSl-H3fNZM&vet=10CCIQMyh3ahcKEwj408aH9OuBAxUAAAAAHQAAAAAQAg..i&imgrefurl=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Fcorporate-employee&docid=E5xziCSg-1C-5M&w=626&h=417&q=corporate%20employee%20images&ved=0CCIQMyh3ahcKEwj408aH9OuBAxUAAAAAHQAAAAAQAg&safe=active&ssui=on" alt="Image 3">
+        </div>
+    </div>
+    
+    <!-- Description for First Row -->
+    <div class="image-description">
+        <p>Senior Manager</p>
+    </div>
+    <div class="image-description1">
+        <p>Team Lead</p>
+    </div>
+    <div class="image-description2">
+        <p>Senior Associate</p>
+    </div>
+    
+    <!-- Second Row of Images (Repeat the structure for additional rows)
+    <div class="image-container">
+        <div class="image">
+            <img src="image4.jpg" alt="Image 4">
+        </div>
+        <div class="image">
+            <img src="image5.jpg" alt="Image 5">
+        </div>
+        <div class="image">
+            <img src="image6.jpg" alt="Image 6">
+        </div>
+    </div> -->
+    
+    <!-- Description for Second Row (Repeat for additional rows)
+    <div class="image-description">
+        <p>Description for Image 4</p>
+    </div>
+    <div class="image-description">
+        <p>Description for Image 5</p>
+    </div>
+    <div class="image-description">
+        <p>Description for Image 6</p>
+    </div> -->
+</body>
+</html>
+
+    
+	
+
+
+
+        
+		
+        
